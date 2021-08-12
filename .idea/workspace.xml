@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35ff7f53-3302-4621-9a9a-d7dca6a1dcc3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.umirc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.umirc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/index.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/login/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login/index.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,17 +75,33 @@
       <updated>1628693771060</updated>
       <workItem from="1628693777842" duration="7000" />
       <workItem from="1628693828415" duration="4961000" />
-      <workItem from="1628779136597" duration="5157000" />
+      <workItem from="1628779136597" duration="5700000" />
     </task>
+    <task id="LOCAL-00001" summary="初始构架">
+      <created>1628784342156</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1628784342156</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="初始构架" />
+    <option name="LAST_COMMIT_MESSAGE" value="初始构架" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="527" y="131" key="CommitChangelistDialog2" timestamp="1628784303947">
+    <state x="527" y="131" key="CommitChangelistDialog2" timestamp="1628784340967">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="527" y="131" key="CommitChangelistDialog2/0.0.1858.1080/1920.0.1920.1080@0.0.1858.1080" timestamp="1628784303947" />
+    <state x="527" y="131" key="CommitChangelistDialog2/0.0.1858.1080/1920.0.1920.1080@0.0.1858.1080" timestamp="1628784340967" />
+    <state x="521" y="260" key="Vcs.Push.Dialog.v2" timestamp="1628784344183">
+      <screen x="0" y="0" width="1858" height="1080" />
+    </state>
+    <state x="521" y="260" key="Vcs.Push.Dialog.v2/0.0.1858.1080/1920.0.1920.1080@0.0.1858.1080" timestamp="1628784344183" />
   </component>
 </project>
