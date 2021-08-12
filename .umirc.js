@@ -2,15 +2,16 @@
 // ref: https://umijs.org/config/
 export default {
   treeShaking: true,
-  routes: [
-    {
-      path: '/',
-      component: '../layouts/index',
-      routes: [
-        { path: '/', component: '../pages/index' }
-      ]
-    }
-  ],
+  // 注销路由配置就开启了约定式路由
+  // routes: [
+  //   {
+  //     path: '/',
+  //     component: '../layouts/index',
+  //     routes: [
+  //       { path: '/', component: '../pages/index' }
+  //     ]
+  //   }
+  // ],
   plugins: [
     // ref: https://umijs.org/plugin/umi-plugin-react.html
     ['umi-plugin-react', {
@@ -19,7 +20,7 @@ export default {
       dynamicImport: false,
       title: 'umi-app',
       dll: false,
-      
+
       routes: {
         exclude: [
           /models\//,

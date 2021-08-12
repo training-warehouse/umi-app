@@ -1,10 +1,12 @@
 import React from 'react';
+import {Layout, Icon} from "antd";
+
 
 const Footer = () => {
   return (
-    <div>
-      底部
-    </div>
+    <Layout.Footer className="footer">
+      Copyright <Icon type="copyright" /> 2021 小摩托练习
+    </Layout.Footer>
   );
 };
 
