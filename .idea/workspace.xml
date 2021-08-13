@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35ff7f53-3302-4621-9a9a-d7dca6a1dcc3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/pages/login/services/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/request.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.umirc.js" beforeDir="false" afterPath="$PROJECT_DIR$/.umirc.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -13,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="SCSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -75,7 +81,8 @@
       <updated>1628693771060</updated>
       <workItem from="1628693777842" duration="7000" />
       <workItem from="1628693828415" duration="4961000" />
-      <workItem from="1628779136597" duration="5700000" />
+      <workItem from="1628779136597" duration="5840000" />
+      <workItem from="1628857365554" duration="8879000" />
     </task>
     <task id="LOCAL-00001" summary="初始构架">
       <created>1628784342156</created>
@@ -84,24 +91,40 @@
       <option name="project" value="LOCAL" />
       <updated>1628784342156</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="完成登录前端校验">
+      <created>1628784897412</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1628784897412</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/node_modules/zrender/index.js" />
+        <option value="$PROJECT_DIR$/node_modules/zrender/index.d.ts" />
+        <option value="$PROJECT_DIR$/node_modules/.staging/umi-utils-e97ed588/src/index.d.ts" />
+        <option value="$PROJECT_DIR$/node_modules/.staging/zrender-4c8f0d36/index.d.ts" />
+      </list>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="初始构架" />
-    <option name="LAST_COMMIT_MESSAGE" value="初始构架" />
+    <MESSAGE value="完成登录前端校验" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成登录前端校验" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="527" y="131" key="CommitChangelistDialog2" timestamp="1628784340967">
+    <state x="527" y="131" key="CommitChangelistDialog2" timestamp="1628784896648">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="527" y="131" key="CommitChangelistDialog2/0.0.1858.1080/1920.0.1920.1080@0.0.1858.1080" timestamp="1628784340967" />
-    <state x="521" y="260" key="Vcs.Push.Dialog.v2" timestamp="1628784344183">
+    <state x="527" y="131" key="CommitChangelistDialog2/0.0.1858.1080/1920.0.1920.1080@0.0.1858.1080" timestamp="1628784896648" />
+    <state x="521" y="260" key="Vcs.Push.Dialog.v2" timestamp="1628784899684">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="521" y="260" key="Vcs.Push.Dialog.v2/0.0.1858.1080/1920.0.1920.1080@0.0.1858.1080" timestamp="1628784344183" />
+    <state x="521" y="260" key="Vcs.Push.Dialog.v2/0.0.1858.1080/1920.0.1920.1080@0.0.1858.1080" timestamp="1628784899684" />
   </component>
 </project>

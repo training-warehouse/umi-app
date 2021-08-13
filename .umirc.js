@@ -1,4 +1,3 @@
-
 // ref: https://umijs.org/config/
 export default {
   treeShaking: true,
@@ -32,4 +31,10 @@ export default {
       },
     }],
   ],
+  proxy: {
+    '/api': {
+      target: "https://cjy-react-interface.herokuapp.com/",
+      changeOrigin: true,
+    }
+  }
 }

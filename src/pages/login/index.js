@@ -1,11 +1,27 @@
 import React from 'react';
 import {Icon, Layout, Form, Input, Button} from "antd";
+import {router} from "umi";
+
 import styles from './index.scss'
+import {login} from "./services/login";
 
 const {Content, Footer} = Layout
 const iconStyle = {color: 'rgba(0,0,0,.25)'}
 
 const Index = ({form}) => {
+  const handleSubmit = () => {
+    // form校验
+    form.validateFields((errors, values) => {
+      if (!errors) {
+        // 发起请求
+        login(values)
+          .then(data => router.push('/'))
+          .catch(err => console.log(err))
+      }
+    })
+  }
+
+
   return (
     <Layout>
       <Content className={styles.content}>
@@ -47,7 +63,8 @@ const Index = ({form}) => {
                 )}
             </Form.Item>
             <Form.Item>
-              <Button type="primary" style={{width: '100%'}}>登录</Button>
+              <Button type="primary" style={{width: '100%'}}
+                      onClick={handleSubmit}>登录</Button>
             </Form.Item>
           </Form>
         </div>
