@@ -1,3 +1,6 @@
+/**
+ * title: 登录
+ */
 import React from 'react';
 import {Icon, Layout, Form, Input, Button} from "antd";
 import {router} from "umi";
@@ -76,5 +79,4 @@ const Index = ({form}) => {
   );
 };
 
-Index.title = "登录"
 export default Form.create()(Index);
