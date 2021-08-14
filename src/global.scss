@@ -5,3 +5,9 @@ html, body, #root {
 body {
   margin: 0;
 }
+
+a{
+  &:not(:last-child){
+    margin-right: 5px;
+  }
+}

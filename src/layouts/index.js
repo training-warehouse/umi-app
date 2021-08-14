@@ -1,4 +1,5 @@
-import {Layout} from "antd";
+import {Layout, ConfigProvider} from "antd";
+import zhCN from 'antd/es/locale/zh_CN'
 
 import './index.scss'
 import Header from "./Header";
@@ -14,11 +15,14 @@ function BasicLayout({children, location}) {
   }
 
   return (
-    <Layout className="basic-layout">
-      <Header/>
-      <Content className="content">{children}</Content>
-      <Footer/>
-    </Layout>
+    // 国际化
+    <ConfigProvider locale={zhCN}>
+      <Layout className="basic-layout">
+        <Header/>
+        <Content className="content">{children}</Content>
+        <Footer/>
+      </Layout>
+    </ConfigProvider>
   );
 }
 

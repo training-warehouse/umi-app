@@ -18,7 +18,10 @@ const Header = ({location}) => {
         <Menu className="menus" mode="horizontal" theme="dark"
               selectedKeys={[location.pathname]}>
           <Menu.Item key="/">
-            <Link to="/">首页</Link>
+            <Link to="/" active="true">首页</Link>
+          </Menu.Item>
+          <Menu.Item key="/users">
+            <Link to="/users">用户</Link>
           </Menu.Item>
         </Menu>
         <div className="right">
