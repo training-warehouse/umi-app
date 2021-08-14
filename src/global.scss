@@ -6,8 +6,17 @@ body {
   margin: 0;
 }
 
-a{
-  &:not(:last-child){
+a {
+  &:not(:last-child) {
     margin-right: 5px;
   }
+}
+
+.ant-select-dropdown {
+  z-index: 10002;
+}
+
+.global-pagination{
+  text-align: center;
+  margin-top: 20px;
 }

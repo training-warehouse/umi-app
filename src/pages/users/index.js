@@ -1,5 +1,8 @@
 /**
  * title: 用户
+ * Routes:
+ *  - ./src/routes/PrivateRoute.js
+ * authority: ["admin"]
  */
 import React from 'react';
 import {Button, Message, Popconfirm} from "antd";

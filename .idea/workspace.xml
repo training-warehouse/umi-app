@@ -2,14 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="35ff7f53-3302-4621-9a9a-d7dca6a1dcc3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/users/components/UserModal.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/users/models/users.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/users/services/users.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/hoc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/login/models/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/reports/components/List.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/reports/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/reports/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/reports/models/reports.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/reports/services/reports.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/reports/write/$id$.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/reports/write/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/PrivateRoute.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/global.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/global.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/layouts/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layouts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/login/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/users/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/users/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,6 +60,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="ts.external.directory.path" value="D:\Program Files\JetBrains\PyCharm 2019.3.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -85,7 +93,7 @@
       <workItem from="1628693828415" duration="4961000" />
       <workItem from="1628779136597" duration="5840000" />
       <workItem from="1628857365554" duration="13139000" />
-      <workItem from="1628917370732" duration="12924000" />
+      <workItem from="1628917370732" duration="28242000" />
     </task>
     <task id="LOCAL-00001" summary="初始构架">
       <created>1628784342156</created>
@@ -108,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628866601789</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="完成用户页">
+      <created>1628930472124</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1628930472124</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,28 +139,29 @@
     <MESSAGE value="初始构架" />
     <MESSAGE value="完成登录前端校验" />
     <MESSAGE value="完成首页" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成首页" />
+    <MESSAGE value="完成用户页" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成用户页" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="527" y="131" key="CommitChangelistDialog2" timestamp="1628871278381">
+    <state x="527" y="131" key="CommitChangelistDialog2" timestamp="1628930460051">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="527" y="131" key="CommitChangelistDialog2/0.0.1858.1080/1920.0.1920.1080@0.0.1858.1080" timestamp="1628871278381" />
+    <state x="527" y="131" key="CommitChangelistDialog2/0.0.1858.1080/1920.0.1920.1080@0.0.1858.1080" timestamp="1628930460051" />
     <state x="178" y="89" key="DiffContextDialog" timestamp="1628866607833">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="178" y="89" key="DiffContextDialog/0.0.1858.1080/1920.0.1920.1080@0.0.1858.1080" timestamp="1628866607833" />
-    <state x="521" y="260" key="Vcs.Push.Dialog.v2" timestamp="1628871289825">
+    <state x="521" y="260" key="Vcs.Push.Dialog.v2" timestamp="1628930475463">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="521" y="260" key="Vcs.Push.Dialog.v2/0.0.1858.1080/1920.0.1920.1080@0.0.1858.1080" timestamp="1628871289825" />
+    <state x="521" y="260" key="Vcs.Push.Dialog.v2/0.0.1858.1080/1920.0.1920.1080@0.0.1858.1080" timestamp="1628930475463" />
     <state x="721" y="456" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1628930447304">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
     <state x="721" y="456" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1858.1080/1920.0.1920.1080@0.0.1858.1080" timestamp="1628930447304" />
-    <state x="603" y="271" width="651" height="538" key="find.popup" timestamp="1628928640470">
+    <state x="651" y="269" width="651" height="538" key="find.popup" timestamp="1628947746677">
       <screen x="0" y="0" width="1858" height="1080" />
     </state>
-    <state x="603" y="271" width="651" height="538" key="find.popup/0.0.1858.1080/1920.0.1920.1080@0.0.1858.1080" timestamp="1628928640470" />
+    <state x="651" y="269" width="651" height="538" key="find.popup/0.0.1858.1080/1920.0.1920.1080@0.0.1858.1080" timestamp="1628947746677" />
   </component>
 </project>

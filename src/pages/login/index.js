@@ -1,25 +1,39 @@
 /**
  * title: 登录
+ * Routes:
+ *  - ./src/routes/PrivateRoute.js
+ * authority: ["admin","user"]
  */
 import React from 'react';
-import {Icon, Layout, Form, Input, Button} from "antd";
+import {Icon, Layout, Form, Input, Button, Message} from "antd";
 import {router} from "umi";
+import jwtDecode from "jwt-decode";
+import {connect} from 'dva'
 
 import styles from './index.scss'
-import {login} from "./services/login";
 
 const {Content, Footer} = Layout
 const iconStyle = {color: 'rgba(0,0,0,.25)'}
 
-const Index = ({form}) => {
+const Index = ({form, dispatch, loading}) => {
   const handleSubmit = () => {
     // form校验
     form.validateFields((errors, values) => {
       if (!errors) {
-        // 发起请求
-        login(values)
-          .then(data => router.push('/'))
-          .catch(err => console.log(err))
+        dispatch({type: 'login/login', payload: values}).then(res => {
+          if (res && res.state === 'suc') {
+            const token = jwtDecode(res.token)
+            const {id, nickname, username, type} = token
+            localStorage.setItem('username', username)
+            localStorage.setItem('nickname', nickname)
+            localStorage.setItem('userId', id)
+            localStorage.setItem('authority', type === '0' ? 'admin' : 'user')
+
+            router.push('/')
+          } else {
+            Message.error(res ? res.msg : '登录失败')
+          }
+        })
       }
     })
   }
@@ -67,6 +81,7 @@ const Index = ({form}) => {
             </Form.Item>
             <Form.Item>
               <Button type="primary" style={{width: '100%'}}
+                      loading={loading}
                       onClick={handleSubmit}>登录</Button>
             </Form.Item>
           </Form>
@@ -79,4 +94,6 @@ const Index = ({form}) => {
   );
 };
 
-export default Form.create()(Index);
+export default connect(
+  ({loading}) => ({loading: loading.effects['login/login']})
+)(Form.create()(Index));

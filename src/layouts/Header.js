@@ -1,12 +1,17 @@
 import React from 'react';
 import {Affix, Menu, Dropdown, Icon} from "antd";
-import {Link, withRouter} from "umi";
+import {Link, router, withRouter} from "umi";
 
 const Header = ({location}) => {
+  const onLogout = () => {
+    localStorage.clear()
+    router.push('/login')
+  }
+
   const menu = (
     <Menu>
       <Menu.Item>
-        <span>退出</span>
+        <span onClick={onLogout}>退出</span>
       </Menu.Item>
     </Menu>
   )
@@ -18,16 +23,20 @@ const Header = ({location}) => {
         <Menu className="menus" mode="horizontal" theme="dark"
               selectedKeys={[location.pathname]}>
           <Menu.Item key="/">
-            <Link to="/" active="true">首页</Link>
+            <Link to="/">首页</Link>
           </Menu.Item>
           <Menu.Item key="/users">
             <Link to="/users">用户</Link>
+          </Menu.Item>
+          <Menu.Item key="/reports">
+            <Link to="/reports">周报</Link>
           </Menu.Item>
         </Menu>
         <div className="right">
           <Dropdown overlay={menu}>
             <a href="#">
-              <Icon type="user" style={{marginRight: 3}}/>admin
+              <Icon type="user"
+                    style={{marginRight: 3}}/>{localStorage.nickname}
             </a>
           </Dropdown>
         </div>

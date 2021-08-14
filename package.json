@@ -8,12 +8,14 @@
     "precommit": "lint-staged"
   },
   "dependencies": {
-    "dva": "^2.6.0-beta.6",
     "antd": "^3.19.5",
+    "dva": "^2.6.0-beta.6",
+    "echarts": "^5.1.2",
+    "echarts-for-react": "^3.0.1",
+    "jwt-decode": "^3.1.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "echarts": "^5.1.2",
-    "echarts-for-react": "^3.0.1"
+    "wangeditor": "^4.7.6"
   },
   "devDependencies": {
     "babel-eslint": "^9.0.0",
